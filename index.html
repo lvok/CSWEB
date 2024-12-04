@@ -1,0 +1,970 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+
+      <link rel="icon" type="image/x-icon" href="https://img.icons8.com/clouds/100/this-pc.png">
+      <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" />
+      <script src="https://cdn.tailwindcss.com"></script>
+      <script>
+         // On page load or when changing themes, best to add inline in `head` to avoid FOUC
+         if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+           document.documentElement.classList.add('dark');
+         } else {
+           document.documentElement.classList.remove('dark')
+         }
+      </script>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.5.0/remixicon.css">
+      <link rel="stylesheet" href="assets/css/styles.css">
+      <title>CASE STUDY </title>
+   </head>
+   <body>
+      <header class="header">
+
+        
+
+<nav class="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600">
+  <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+    <a href="#home" class="flex items-center space-x-3 rtl:space-x-reverse">
+      <img width="35" height="35" src="assets/img/logo/1000003451-removebg-preview.png" alt="Logo" />
+      <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">M | J</span>
+    </a>
+    <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-sticky" aria-expanded="false">
+      <span class="sr-only">Open main menu</span>
+      <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15" />
+      </svg>
+    </button>
+    <div class="hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+      <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+         <button id="theme-toggle" type="button" class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5">
+    <svg id="theme-toggle-dark-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
+    <svg id="theme-toggle-light-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
+</button>
+        <li><a href="#home" class="navbar-item block py-2 px-3" data-section="home">Home</a></li>
+        <li><a href="#about" class="navbar-item block py-2 px-3" data-section="about">About</a></li>
+        <li><a href="#projects" class="navbar-item block py-2 px-3" data-section="projects">Projects</a></li>
+        <li><a href="#contacts" class="navbar-item block py-2 px-3" data-section="contacts">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+      </header>
+      <main>
+         <br><br>
+         <section class="bg-white dark:bg-gray-900" id="home">
+            <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12">
+               <a href="#about" class="inline-flex justify-between items-center py-1 px-1 pr-4 mb-7 text-sm text-gray-700 bg-gray-100 rounded-full dark:bg-gray-800 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700" role="alert">
+                  <span class="text-xs bg-primary-600 rounded-full text-white px-4 py-1.5 mr-3">See</span> <span class="text-sm font-medium">About us</span> 
+                  <svg class="ml-2 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                     <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path>
+                  </svg>
+               </a>
+               <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white">Welcome To Our Personal Website</h1>
+               <p class="mb-8 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400">This is our cozy corner of the internet where we write about our interests. Pull up a chair—the best thing happen here!</p>
+               <div class="flex flex-col mb-8 lg:mb-16 space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4">
+               </div>
+               <div class="px-4 mx-auto text-center md:max-w-screen-md lg:max-w-screen-lg lg:px-36">
+                  <span class="font-semibold text-gray-400 uppercase">Powered by</span>
+                  <div class="flex flex-wrap justify-center items-center mt-8 text-gray-500 sm:justify-between">
+                     <a href="#" class="mr-5 mb-5 lg:mb-0 hover:text-gray-800 dark:hover:text-gray-400">
+                        <svg fill="none" height="150" width="150" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 124 141.53199999999998">
+                           <path d="M10.383 126.894L0 0l124 .255-10.979 126.639-50.553 14.638z" fill="#e34f26"/>
+                           <path d="M62.468 129.277V12.085l51.064.17-9.106 104.851z" fill="#ef652a"/>
+                           <path d="M99.49 41.362l1.446-15.49H22.383l4.34 47.49h54.213L78.81 93.617l-17.362 4.68-17.617-5.106-.936-12.085H27.319l2.128 24.681 32 8.936 32.255-8.936 4.34-48.17H41.107L39.49 41.362z" fill="#fff"/>
+                        </svg>
+                     </a>
+                     <a href="#" class="mr-5 mb-5 lg:mb-0 hover:text-gray-800 dark:hover:text-gray-400">
+                        <svg fill="none" height="150" width="150" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 124 141.53">
+                           <path d="M10.383 126.892L0 0l124 .255-10.979 126.637-50.553 14.638z" fill="#1b73ba"/>
+                           <path d="M62.468 129.275V12.085l51.064.17-9.106 104.85z" fill="#1c88c7"/>
+                           <path d="M100.851 27.064H22.298l2.128 15.318h37.276l-36.68 15.745 2.127 14.808h54.043l-1.958 20.68-18.298 3.575-16.595-4.255-1.277-11.745H27.83l2.042 24.426 32.681 9.106 31.32-9.957 4-47.745H64.765l36.085-14.978z" fill="#fff"/>
+                        </svg>
+                     </a>
+                     <a href="#" class="mr-5 mb-5 lg:mb-0 hover:text-gray-800 dark:hover:text-gray-400">
+                        <svg fill="none" height="150" width="150" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 124 141.53199999999998">
+                           <path d="M10.383 126.894L0 0l124 .255-10.979 126.639-50.553 14.638z" fill="#e9ca32"/>
+                           <path d="M62.468 129.277V12.085l51.064.17-9.106 104.851z" fill="#ffde25"/>
+                           <g fill="#fff">
+                              <path d="M57 26H43.5v78L33 102V91.5l-12.5-2V113l36.5 9.5zM67.127 26H104.5L102 40.95H81.394v24.533H102L99.5 115l-32.373 7.5V107L89 99.5 90.263 79l-23.136 3.35z"/>
+                           </g>
+                        </svg>
+                        </svg>                                                   
+                     </a>
+                  </div>
+               </div>
+            </div>
+            <div class="relative mx-auto border-gray-800 dark:border-gray-800 bg-gray-800 border-[8px] rounded-t-xl h-[172px] max-w-[301px] md:h-[294px] md:max-w-[512px]">
+               <div class="rounded-lg overflow-hidden h-[156px] md:h-[278px] bg-white dark:bg-gray-800">
+                  <img src="assets/img/random/11d95817-a168-4e2e-a34b-64cfcf8b2d3f.jpeg" class="dark:hidden h-[156px] md:h-[278px] w-full rounded-lg" alt="">
+                  <img src="assets/img/random/11d95817-a168-4e2e-a34b-64cfcf8b2d3f.jpeg" class="hidden dark:block h-[156px] md:h-[278px] w-full rounded-lg" alt="">
+               </div>
+            </div>
+            <div class="relative mx-auto bg-gray-900 dark:bg-gray-700 rounded-b-xl rounded-t-sm h-[17px] max-w-[351px] md:h-[21px] md:max-w-[597px]">
+               <div class="absolute left-1/2 top-0 -translate-x-1/2 rounded-b-xl w-[56px] h-[5px] md:w-[96px] md:h-[8px] bg-gray-800"></div>
+            </div>
+             <div class="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
+               <div class="font-light text-gray-500 sm:text-lg dark:text-gray-400">
+                  <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">We didn't reinvent the wheel</h2>
+                  <p class="mb-4">We are strategists, designers and developers. Innovators and problem solvers. Small enough to be simple and quick, but big enough to deliver the scope you want at the pace you need. Small enough to be simple and quick, but big enough to deliver the scope you want at the pace you need.</p>
+                  <p>We are strategists, designers and developers. Innovators and problem solvers. Small enough to be simple and quick.</p>
+               </div>
+               <div class="grid grid-cols-2 gap-4 mt-8">
+                  <img class="w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/content/office-long-2.png" alt="office content 1">
+                  <img class="mt-4 w-full lg:mt-10 rounded-lg" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/content/office-long-1.png" alt="office content 2">
+               </div>
+            </div>
+         </section>
+            <section class="bg-white dark:bg-gray-900">
+               <section id="about">
+               <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6 ">
+               <div class="mx-auto max-w-screen-sm text-center mb-8 lg:mb-16">
+                  <hr class="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700">
+                  <h1  class="mb-4 text-3xl font-extrabold text-gray-900 dark:text-white md:text-5xl lg:text-6xl"><span class="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">PERSONAL</span> INFORMATION</h1>
+                  <p class="text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400">Welcome!</p>
+               </div>
+               <div class="items-center bg-gray-50 rounded-lg shadow sm:flex dark:bg-gray-800 dark:border-gray-700">
+
+
+<div class="relative mx-auto border-gray-800 dark:border-gray-800 bg-gray-800 border-[8px] rounded-t-xl h-[172px] max-w-[301px] md:h-[294px] md:max-w-[512px]">
+    <div class="rounded-lg overflow-hidden h-[156px] md:h-[278px] bg-white dark:bg-gray-800">
+       
+        <img src="assets/img/person/IMG_20241128_175750.jpg" class="hidden dark:block h-[156px] md:h-[278px] w-full rounded-lg" alt="">
+    </div>
+</div>
+<div class="relative mx-auto bg-gray-900 dark:bg-gray-700 rounded-b-xl rounded-t-sm h-[17px] max-w-[351px] md:h-[21px] md:max-w-[597px]">
+    <div class="absolute left-1/2 top-0 -translate-x-1/2 rounded-b-xl w-[56px] h-[5px] md:w-[96px] md:h-[8px] bg-gray-800"></div>
+</div>
+
+
+                  
+                  <div class="p-5">
+                     <h3 class="text-xl font-bold tracking-tight text-gray-900 dark:text-white">
+                        <a href="#">Mackie V. Vero</a>
+                     </h3>
+                     <span class="text-gray-500 dark:text-gray-400">BSIT - 2D</span>
+                     <p class="mt-3 mb-4 font-light text-gray-500 dark:text-gray-400">Fueled by a passion for turning creative ideas into interactive experiences, I'm on an exciting journey to become a web developer.</p>
+                     <ul class="flex space-x-4 sm:mt-0">
+                        <li>
+<a type="button" href="https://www.facebook.com/bebop117?mibextid=ZbWKwL" target="_blank"class="text-white bg-[#3b5998] hover:bg-[#3b5998]/90 focus:ring-4 focus:outline-none focus:ring-[#3b5998]/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-[#3b5998]/55 me-2 mb-2">
+  <svg class="w-4 h-4 me-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 8 19">
+    <path fill-rule="evenodd" d="M6.135 3H8V0H6.135a4.147 4.147 0 0 0-4.142 4.142V6H0v3h2v9.938h3V9h2.021l.592-3H5V3.591A.6.6 0 0 1 5.592 3h.543Z" clip-rule="evenodd" />
+  </svg>
+  Facebook 
+</a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+               <blockquote class="p-4 my-4 border-s-4 border-gray-300 bg-gray-50 dark:border-gray-500 dark:bg-gray-800">
+                  <p class="text-xl italic font-medium leading-relaxed text-gray-900 dark:text-white">"Code is the canvas where logic meets art, where dreams become interfaces, and where every semicolon builds a bridge to possibility."</p>
+               </blockquote>
+                  <br>
+                  <h1 class="mb-4 text-3xl font-extrabold text-gray-900 dark:text-white md:text-5xl lg:text-6xl"><span class="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">About</span> Me</h1>
+                  <div class="flow-root rounded-lg border border-gray-100 py-3 shadow-sm dark:border-gray-700">
+                     <dl class="-my-3 divide-y divide-gray-100 text-sm dark:divide-gray-700">
+                        <div
+                           class="grid grid-cols-1 gap-1 p-3 even:bg-gray-50 sm:grid-cols-3 sm:gap-4 even:dark:bg-gray-800"
+                           >
+                           <dt class="font-medium text-gray-900 dark:text-white">Name</dt>
+                           <dd class="text-gray-700 sm:col-span-2 dark:text-gray-200">Mackie V. Vero</dd>
+                        </div>
+                        <div
+                           class="grid grid-cols-1 gap-1 p-3 even:bg-gray-50 sm:grid-cols-3 sm:gap-4 even:dark:bg-gray-800"
+                           >
+                           <dt class="font-medium text-gray-900 dark:text-white">Age</dt>
+                           <dd class="text-gray-700 sm:col-span-2 dark:text-gray-200">20 years old</dd>
+                        </div>
+                        <div
+                           class="grid grid-cols-1 gap-1 p-3 even:bg-gray-50 sm:grid-cols-3 sm:gap-4 even:dark:bg-gray-800"
+                           >
+                           <dt class="font-medium text-gray-900 dark:text-white">Birthday</dt>
+                           <dd class="text-gray-700 sm:col-span-2 dark:text-gray-200">11/03/2004</dd>
+                        </div>
+                        <div
+                           class="grid grid-cols-1 gap-1 p-3 even:bg-gray-50 sm:grid-cols-3 sm:gap-4 even:dark:bg-gray-800"
+                           >
+                           <dt class="font-medium text-gray-900 dark:text-white">Occupation</dt>
+                           <dd class="text-gray-700 sm:col-span-2 dark:text-gray-200">Student</dd>
+                        </div>
+                        <div
+                           class="grid grid-cols-1 gap-1 p-3 even:bg-gray-50 sm:grid-cols-3 sm:gap-4 even:dark:bg-gray-800"
+                           >
+                           <dt class="font-medium text-gray-900 dark:text-white">Address</dt>
+                           <dd class="text-gray-700 sm:col-span-2 dark:text-gray-200">Betes, Aliaga, Nueva Ecija</dd>
+                        </div>
+                        <div
+                           class="grid grid-cols-1 gap-1 p-3 even:bg-gray-50 sm:grid-cols-3 sm:gap-4 even:dark:bg-gray-800"
+                           >
+                           <dt class="font-medium text-gray-900 dark:text-white">Bio</dt>
+                           <dd class="text-gray-700 sm:col-span-2 dark:text-gray-200">
+                              As a dedicated sophomore pursuing a Bachelor of Science in Information Technology, I'm passionate about building the future through web development. Currently honing my skills in programming fundamentals and exploring the vast world of web technologies, I combine my academic knowledge with hands-on coding practice.
+                           </dd>
+                        </div>
+                     </dl>
+                  </div>
+                 <br>
+                     <h1 class="mb-4 text-3xl font-extrabold text-gray-900 dark:text-white md:text-5xl lg:text-6xl"><span class="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">Hobb</span>ies</h1>
+                     <div class="mx-auto max-w-screen-xl px-4 2xl:px-0">
+                        <div class="grid gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+                           <a class="flex items-center rounded-lg border border-gray-200 bg-white px-4 py-2 hover:bg-gray-50 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+                           <span class="text-sm font-medium text-gray-900 dark:text-white">SPORTS</span>
+                           </a>
+                           <a  class="flex items-center rounded-lg border border-gray-200 bg-white px-4 py-2 hover:bg-gray-50 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+                             
+                           <span class="text-sm font-medium text-gray-900 dark:text-white">PAINTING</span>
+                           </a>
+                           <a class="flex items-center rounded-lg border border-gray-200 bg-white px-4 py-2 hover:bg-gray-50 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+                           <span class="text-sm font-medium text-gray-900 dark:text-white">CRAFTING</span>
+                           </a>
+                           <a  class="flex items-center rounded-lg border border-gray-200 bg-white px-4 py-2 hover:bg-gray-50 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+                           <span class="text-sm font-medium text-gray-900 dark:text-white">GAMING</span>
+                           </a>
+                           <a class="flex items-center rounded-lg border border-gray-200 bg-white px-4 py-2 hover:bg-gray-50 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+                           <span class="text-sm font-medium text-gray-900 dark:text-white">MUSIC</span>
+                           </a>
+                           <a  class="flex items-center rounded-lg border border-gray-200 bg-white px-4 py-2 hover:bg-gray-50 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+                           <span class="text-sm font-medium text-gray-900 dark:text-white">PHOTOGRAPHY</span>
+                           </a>
+                           <a class="flex items-center rounded-lg border border-gray-200 bg-white px-4 py-2 hover:bg-gray-50 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+                           <span class="text-sm font-medium text-gray-900 dark:text-white">COOKING</span>
+                           </a>
+                           <a  class="flex items-center rounded-lg border border-gray-200 bg-white px-4 py-2 hover:bg-gray-50 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+                           <span class="text-sm font-medium text-gray-900 dark:text-white">MOVIE</span>
+                           </a>
+                        </div>
+                     </div>
+                  
+                  <br>
+                  <h1 class="mb-4 text-3xl font-extrabold text-gray-900 dark:text-white md:text-5xl lg:text-6xl"><span class="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">Educa</span>tion</h1>
+                  <ol class="items-center sm:flex">
+                     <li class="relative mb-6 sm:mb-0">
+                        <div class="flex items-center">
+                           <div class="z-10 flex items-center justify-center w-24 h-24 bg-blue-100 rounded-full ring-0 ring-white dark:bg-white-900 sm:ring-8 dark:ring-gray-900 shrink-0">
+                              <img src="assets/img/logo/1000003003-removebg-preview (1).png"  alt="/1000003003-removebg-preview (1) (1).png">
+                           </div>
+                           <div class="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700"></div>
+                        </div>
+                        <div class="mt-3 sm:pe-8">
+                           <h3 class="text-lg font-semibold text-gray-900 dark:text-white">BETES ELEMENTARY SCHOOL</h3>
+                           <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">2011-2017</time>
+                           <p class="text-base font-normal text-gray-500 dark:text-gray-400">REGULAR SE</p>
+                        </div>
+                     </li>
+                     <li class="relative mb-6 sm:mb-0">
+                        <div class="flex items-center">
+                           <div class="z-10 flex items-center justify-center w-24 h-24 bg-blue-100 rounded-full ring-0 ring-white dark:bg-white-900 sm:ring-8 dark:ring-gray-900 shrink-0">
+                              <img src="assets/img/logo/1000003015-removebg-preview.png" alt="/1000003003-removebg-preview (1) (1).png">
+                           </div>
+                           <div class="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700"></div>
+                        </div>
+                        <div class="mt-3 sm:pe-8">
+                           <h3 class="text-lg font-semibold text-gray-900 dark:text-white">TALAVERA NATIONAL HIGH SCHOOL</h3>
+                           <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">2017-2021</time>
+                           <p class="text-base font-normal text-gray-500 dark:text-gray-400">SP-ICT SECTION</p>
+                        </div>
+                     </li>
+                     <li class="relative mb-6 sm:mb-0">
+                        <div class="flex items-center">
+                           <div class="z-10 flex items-center justify-center w-24 h-24 bg-blue-100 rounded-full ring-0 ring-white dark:bg-white-900 sm:ring-8 dark:ring-gray-900 shrink-0">
+                              <img src="assets/img/logo/1000003008-removebg-preview.png" alt="">
+                           </div>
+                           <div class="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700"></div>
+                        </div>
+                        <div class="mt-3 sm:pe-8">
+                           <h3 class="text-lg font-semibold text-gray-900 dark:text-white">TALAVERA SENIOR HIGH SCHOOL</h3>
+                           <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">2021-2023</time>
+                           <p class="text-base font-normal text-gray-500 dark:text-gray-400">ABM STRAND</p>
+                        </div>
+                     </li>
+                     <li class="relative mb-6 sm:mb-0">
+                        <div class="flex items-center">
+                           <div class="z-10 flex items-center justify-center w-24 h-24 bg-blue-100 rounded-full ring-0 ring-white dark:bg-white-900 sm:ring-8 dark:ring-gray-900 shrink-0">
+                              <img src="assets/img/logo/1000003010-removebg-preview.png" alt="assets/img/logo/1000003010-removebg-preview.png">
+                           </div>
+                           <div class="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700"></div>
+                        </div>
+                        <div class="mt-3 sm:pe-8">
+                           <h3 class="text-lg font-semibold text-gray-900 dark:text-white">NUEVA ECIJA UNIVERSITY OF SCIENCE AND TECHNOLOGY</h3>
+                           <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">2023-PRESENT</time>
+                           <p class="text-base font-normal text-gray-500 dark:text-gray-400">BS INFORMATION TECHNOLOGY</p>
+                        </div>
+                     </li>
+                  </ol>
+
+                  <br>
+                  <h1 class="mb-4 text-3xl font-extrabold text-gray-900 dark:text-white md:text-5xl lg:text-6xl"><span class="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">Ski</span>lls</h1>
+
+
+
+<div class="grid grid-cols-2 gap-2">
+  <div>
+    <img class="h-56 w-full rounded-lg object-cover" src="assets/img/skills/pexels-ckeletn-255082731-15100360 (1).jpg" alt="" />
+
+    <h1 class="mb-4 text-xl font-extrabold leading-none tracking-tight text-gray-900 md:text-xl lg:text-xl dark:text-white">
+      <mark class="px-2 text-white bg-blue-600 rounded dark:bg-blue-500">DRAWING</mark>
+    </h1>
+  </div>
+  <div>
+    <img class="h-56 w-full rounded-lg object-cover" src="assets/img/skills/pexels-daiangan-102127 (1).jpg" alt="" />
+
+    <h1 class="mb-4 text-xl font-extrabold leading-none tracking-tight text-gray-900 md:text-xl lg:text-xl dark:text-white">
+      <mark class="px-2 text-white bg-blue-600 rounded dark:bg-blue-500">PAINTING</mark>
+    </h1>
+  </div>
+</div>
+<div class="inline-flex items-center justify-center w-full">
+  <hr class="w-64 h-px my-8 bg-gray-200 border-0 dark:bg-gray-700">
+  <span class="absolute px-3 font-medium text-gray-900 -translate-x-1/2 bg-white left-1/2 dark:text-white dark:bg-gray-900">Web Development Skill</span>
+</div>
+                  <div class="flex justify-between mb-1">
+                     <span class="text-base font-medium text-blue-700 dark:text-white">HTML</span>
+                     <span class="text-sm font-medium text-blue-700 dark:text-white">45%</span>
+                  </div>
+                  <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
+                     <div class="bg-blue-600 h-2.5 rounded-full" style="width: 45%"></div>
+                  </div>
+                  <div class="flex justify-between mb-1">
+                     <span class="text-base font-medium text-blue-700 dark:text-white">CSS</span>
+                     <span class="text-sm font-medium text-blue-700 dark:text-white">45%</span>
+                  </div>
+                  <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
+                     <div class="bg-blue-600 h-2.5 rounded-full" style="width: 45%"></div>
+                  </div>
+                  <div class="flex justify-between mb-1">
+                     <span class="text-base font-medium text-blue-700 dark:text-white">JAVASCRIPT</span>
+                     <span class="text-sm font-medium text-blue-700 dark:text-white">20%</span>
+                  </div>
+                  <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
+                     <div class="bg-blue-600 h-2.5 rounded-full" style="width: 20%"></div>
+                  </div>
+
+
+                  <br>
+                  <h1 class="mb-4 text-3xl font-extrabold text-gray-900 dark:text-white md:text-5xl lg:text-6xl"><span class="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">Personal</span> Project</h1>
+                  <div class="relative mx-auto border-gray-800 dark:border-gray-800 bg-gray-800 border-[8px] rounded-t-xl h-[172px] max-w-[301px] md:h-[294px] md:max-w-[512px]">
+                     <div class="assets/img/project/received_1255802305661848.jpeg" class="dark:hidden h-[156px] md:h-[278px] w-full rounded-lg" alt="">
+                        <img src="assets/img/project/received_1255802305661848.jpeg" alt="">
+                     </div>
+                  </div>
+                  <div class="relative mx-auto bg-gray-900 dark:bg-gray-700 rounded-b-xl rounded-t-sm h-[17px] max-w-[351px] md:h-[21px] md:max-w-[597px]">
+                     <div class="absolute left-1/2 top-0 -translate-x-1/2 rounded-b-xl w-[56px] h-[5px] md:w-[96px] md:h-[8px] bg-gray-800"></div>
+                  </div>
+               <hr class="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700">
+                  <h1 class="mb-4 text-3xl font-extrabold text-gray-900 dark:text-white md:text-5xl lg:text-6xl"><span class="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">Get in</span> touch</h1>
+                  <div class="container px-6 py-12 mx-auto">
+                  
+                     <p class="font-medium text-blue-500 dark:text-blue-400">Contact Me</p>
+                     <div class="grid grid-cols-1 gap-12 mt-10 lg:grid-cols-2">
+                        <div class="grid grid-cols-1 gap-12 md:grid-cols-2">
+                           <div>
+                              <span class="inline-block p-3 text-blue-500 rounded-full bg-blue-100/80 dark:bg-gray-800">
+                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
+                                 </svg>
+                              </span>
+                              <h2 class="mt-4 text-base font-medium text-gray-800 dark:text-white">Email</h2>
+                              <p class="mt-2 text-sm text-gray-500 dark:text-gray-400">Email me @</p>
+                              <p class="mt-2 text-sm text-blue-500 dark:text-blue-400">mackie_xyz@gmail.com</p>
+                           </div>
+                           <div>
+                              <span class="inline-block p-3 text-blue-500 rounded-full bg-blue-100/80 dark:bg-gray-800">
+                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
+                                 </svg>
+                              </span>
+                              <h2 class="mt-4 text-base font-medium text-gray-800 dark:text-white">Phone</h2>
+                              <p class="mt-2 text-sm text-gray-500 dark:text-gray-400">Mon-Fri from 8am to 5pm.</p>
+                              <p class="mt-2 text-sm text-blue-500 dark:text-blue-400">0919-999-6788</p>
+                           </div>
+                        </div>
+                        <div class="p-4 py-6 rounded-lg bg-gray-50 dark:bg-gray-800 md:p-8">
+                           <form>
+                              <div class="-mx-2 md:items-center md:flex">
+                                 <div class="flex-1 px-2">
+                                    <label class="block mb-2 text-sm text-gray-600 dark:text-gray-200">First Name</label>
+                                    <input required type="text" placeholder="John " class="block w-full px-5 py-2.5 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-lg dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40" />
+                                 </div>
+                                 <div class="flex-1 px-2 mt-4 md:mt-0">
+                                    <label class="block mb-2 text-sm text-gray-600 dark:text-gray-200">Last Name</label>
+                                    <input required type="text" placeholder="Doe" class="block w-full px-5 py-2.5 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-lg dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40" />
+                                 </div>
+                              </div>
+                              <div class="mt-4">
+                                 <label class="block mb-2 text-sm text-gray-600 dark:text-gray-200">Email address</label>
+                                 <input type="email" placeholder="johndoe@example.com" class="block w-full px-5 py-2.5 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-lg dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40" />
+                              </div>
+                              <div class="w-full mt-4">
+                                 <label class="block mb-2 text-sm text-gray-600 dark:text-gray-200">Message</label>
+                                 <textarea class=" resize-none block w-full h-32 px-5 py-2.5 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-lg md:h-56 dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40 resize-none" placeholder="Message"></textarea>
+                              </div>
+                              <button class="w-full px-6 py-3 mt-4 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-blue-500 rounded-lg hover:bg-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-50">
+                              Send message
+                              </button>
+                           </form>
+                        </div>
+                     </div>
+                  </div>
+               
+               <hr class="w-48 h-1 mx-auto my-4 bg-gray-100 border-0 rounded md:my-10 dark:bg-gray-700">
+               <div class="items-center bg-gray-50 rounded-lg shadow sm:flex dark:bg-gray-800 dark:border-gray-700">
+                  <div class="relative mx-auto border-gray-800 dark:border-gray-800 bg-gray-800 border-[8px] rounded-t-xl h-[172px] max-w-[301px] md:h-[294px] md:max-w-[512px]">
+    <div class="rounded-lg overflow-hidden h-[156px] md:h-[278px] bg-white dark:bg-gray-800">
+       
+        <img src="assets/img/person/IMG_20241128_175715.jpg" class="hidden dark:block h-[156px] md:h-[278px] w-full rounded-lg" alt="">
+    </div>
+</div>
+<div class="relative mx-auto bg-gray-900 dark:bg-gray-700 rounded-b-xl rounded-t-sm h-[17px] max-w-[351px] md:h-[21px] md:max-w-[597px]">
+    <div class="absolute left-1/2 top-0 -translate-x-1/2 rounded-b-xl w-[56px] h-[5px] md:w-[96px] md:h-[8px] bg-gray-800"></div>
+</div>
+
+                  
+
+                  
+                  <div class="p-5">
+                     <h3 class="text-xl font-bold tracking-tight text-gray-900 dark:text-white">
+                        <a href="#">Joseph M. Pineda</a>
+                     </h3>
+                     <span class="text-gray-500 dark:text-gray-400">BSIT - 2D</span>
+                     <p class="mt-3 mb-4 font-light text-gray-500 dark:text-gray-400">The journey as an aspiring IT is both challenging and rewarding. I started by immersing myself in the basics—programming.  </p>
+                     <ul class="flex space-x-4 sm:mt-0">
+                        <li>
+<a type="button" href="https://www.facebook.com/joseph.pineda.600395?mibextid=ZbWKwL" target="_blank"class="text-white bg-[#3b5998] hover:bg-[#3b5998]/90 focus:ring-4 focus:outline-none focus:ring-[#3b5998]/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-[#3b5998]/55 me-2 mb-2">
+  <svg class="w-4 h-4 me-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 8 19">
+    <path fill-rule="evenodd" d="M6.135 3H8V0H6.135a4.147 4.147 0 0 0-4.142 4.142V6H0v3h2v9.938h3V9h2.021l.592-3H5V3.591A.6.6 0 0 1 5.592 3h.543Z" clip-rule="evenodd" />
+  </svg>
+  Facebook 
+</a>
+                   
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+               <blockquote class="p-4 my-4 border-s-4 border-gray-300 bg-gray-50 dark:border-gray-500 dark:bg-gray-800">
+                  <p class="text-xl italic font-medium leading-relaxed text-gray-900 dark:text-white">"Success in IT isn't just about mastering technology it's about embracing challenges, staying curious, and constantly evolving with the digital world."</p>
+               </blockquote>
+                  <h1 class="mb-4 text-3xl font-extrabold text-gray-900 dark:text-white md:text-5xl lg:text-6xl"><span class="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">About</span> Me</h1>
+                  <div class="flow-root rounded-lg border border-gray-100 py-3 shadow-sm dark:border-gray-700">
+                     <dl class="-my-3 divide-y divide-gray-100 text-sm dark:divide-gray-700">
+                        <div
+                           class="grid grid-cols-1 gap-1 p-3 even:bg-gray-50 sm:grid-cols-3 sm:gap-4 even:dark:bg-gray-800"
+                           >
+                           <dt class="font-medium text-gray-900 dark:text-white">Name</dt>
+                           <dd class="text-gray-700 sm:col-span-2 dark:text-gray-200">Joseph M. Pineda</dd>
+                        </div>
+                        <div
+                           class="grid grid-cols-1 gap-1 p-3 even:bg-gray-50 sm:grid-cols-3 sm:gap-4 even:dark:bg-gray-800"
+                           >
+                           <dt class="font-medium text-gray-900 dark:text-white">Age</dt>
+                           <dd class="text-gray-700 sm:col-span-2 dark:text-gray-200">20 years old</dd>
+                        </div>
+                        <div
+                           class="grid grid-cols-1 gap-1 p-3 even:bg-gray-50 sm:grid-cols-3 sm:gap-4 even:dark:bg-gray-800"
+                           >
+                           <dt class="font-medium text-gray-900 dark:text-white">Birthday</dt>
+                           <dd class="text-gray-700 sm:col-span-2 dark:text-gray-200">09/07/2004</dd>
+                        </div>
+                        <div
+                           class="grid grid-cols-1 gap-1 p-3 even:bg-gray-50 sm:grid-cols-3 sm:gap-4 even:dark:bg-gray-800"
+                           >
+                           <dt class="font-medium text-gray-900 dark:text-white">Occupation</dt>
+                           <dd class="text-gray-700 sm:col-span-2 dark:text-gray-200">Student</dd>
+                        </div>
+                        <div
+                           class="grid grid-cols-1 gap-1 p-3 even:bg-gray-50 sm:grid-cols-3 sm:gap-4 even:dark:bg-gray-800"
+                           >
+                           <dt class="font-medium text-gray-900 dark:text-white">Address</dt>
+                           <dd class="text-gray-700 sm:col-span-2 dark:text-gray-200">Pagasa, Talavera, Nueva Ecija</dd>
+                        </div>
+                        <div
+                           class="grid grid-cols-1 gap-1 p-3 even:bg-gray-50 sm:grid-cols-3 sm:gap-4 even:dark:bg-gray-800"
+                           >
+                           <dt class="font-medium text-gray-900 dark:text-white">Bio</dt>
+                           <dd class="text-gray-700 sm:col-span-2 dark:text-gray-200">
+                             I combine my academic knowledge with hands-on coding practice.
+                           </dd>
+                        </div>
+                     </dl>
+                  </div>
+                  <br>
+                     <h1 class="mb-4 text-3xl font-extrabold text-gray-900 dark:text-white md:text-5xl lg:text-6xl"><span class="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">Hobb</span>ies</h1>
+                     <div class="mx-auto max-w-screen-xl px-4 2xl:px-0">
+
+                        <div class="grid gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+                           <a  class="flex items-center rounded-lg border border-gray-200 bg-white px-4 py-2 hover:bg-gray-50 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+                           <span class="text-sm font-medium text-gray-900 dark:text-white">MECHANIC</span>
+                           </a>
+                           <a  class="flex items-center rounded-lg border border-gray-200 bg-white px-4 py-2 hover:bg-gray-50 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+                           <span class="text-sm font-medium text-gray-900 dark:text-white">DANCING</span>
+                           </a>
+                           <a  class="flex items-center rounded-lg border border-gray-200 bg-white px-4 py-2 hover:bg-gray-50 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+                           <span class="text-sm font-medium text-gray-900 dark:text-white">SINGING</span>
+                           </a>
+                           <a class="flex items-center rounded-lg border border-gray-200 bg-white px-4 py-2 hover:bg-gray-50 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+                           <span class="text-sm font-medium text-gray-900 dark:text-white">STROLL</span>
+                           </a>
+                           <a class="flex items-center rounded-lg border border-gray-200 bg-white px-4 py-2 hover:bg-gray-50 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+                           <span class="text-sm font-medium text-gray-900 dark:text-white">MUSIC</span>
+                           </a>
+                           <a class="flex items-center rounded-lg border border-gray-200 bg-white px-4 py-2 hover:bg-gray-50 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+                           <span class="text-sm font-medium text-gray-900 dark:text-white">GAMBLING</span>
+                           </a>
+                           <a class="flex items-center rounded-lg border border-gray-200 bg-white px-4 py-2 hover:bg-gray-50 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+                           <span class="text-sm font-medium text-gray-900 dark:text-white">COOKING</span>
+                           </a>
+                           <a class="flex items-center rounded-lg border border-gray-200 bg-white px-4 py-2 hover:bg-gray-50 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+                           <span class="text-sm font-medium text-gray-900 dark:text-white">JOGGING</span>
+                           </a>
+                        </div>
+                     </div>
+                 
+                  <br>
+                  <h1 class="mb-4 text-3xl font-extrabold text-gray-900 dark:text-white md:text-5xl lg:text-6xl"><span class="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">Educa</span>tion</h1>
+                  <ol class="items-center sm:flex">
+                     <li class="relative mb-6 sm:mb-0">
+                        <div class="flex items-center">
+                           <div class="z-10 flex items-center justify-center w-24 h-24 bg-blue-100 rounded-full ring-0 ring-white dark:bg-white-900 sm:ring-8 dark:ring-gray-900 shrink-0">
+                              <img src="assets/img/logo/1000003201-removebg-preview.png"  alt="/1000003003-removebg-preview (1) (1).png">
+                           </div>
+                           <div class="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700"></div>
+                        </div>
+                        <div class="mt-3 sm:pe-8">
+                           <h3 class="text-lg font-semibold text-gray-900 dark:text-white">TALAVERA CENTRAL SCHOOL</h3>
+                           <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">2011-2017</time>
+                           <p class="text-base font-normal text-gray-500 dark:text-gray-400">REGULAR SECTION</p>
+                        </div>
+                     </li>
+                     <li class="relative mb-6 sm:mb-0">
+                        <div class="flex items-center">
+                           <div class="z-10 flex items-center justify-center w-24 h-24 bg-blue-100 rounded-full ring-0 ring-white dark:bg-white-900 sm:ring-8 dark:ring-gray-900 shrink-0">
+                              <img src="assets/img/logo/1000003015-removebg-preview.png" alt="/1000003003-removebg-preview (1) (1).png">
+                           </div>
+                           <div class="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700"></div>
+                        </div>
+                        <div class="mt-3 sm:pe-8">
+                           <h3 class="text-lg font-semibold text-gray-900 dark:text-white">TALAVERA NATIONAL HIGH SCHOOL</h3>
+                           <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">2017-2021</time>
+                           <p class="text-base font-normal text-gray-500 dark:text-gray-400">BASIC EDUCATION CURRICULUM</p>
+                        </div>
+                     </li>
+                     <li class="relative mb-6 sm:mb-0">
+                        <div class="flex items-center">
+                           <div class="z-10 flex items-center justify-center w-24 h-24 bg-blue-100 rounded-full ring-0 ring-white dark:bg-white-900 sm:ring-8 dark:ring-gray-900 shrink-0">
+                              <img src="assets/img/logo/1000003008-removebg-preview.png" alt="">
+                           </div>
+                           <div class="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700"></div>
+                        </div>
+                        <div class="mt-3 sm:pe-8">
+                           <h3 class="text-lg font-semibold text-gray-900 dark:text-white">TALAVERA SENIOR HIGH SCHOOL</h3>
+                           <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">2021-2023</time>
+                           <p class="text-base font-normal text-gray-500 dark:text-gray-400">STEM STRAND</p>
+                        </div>
+                     </li>
+                     <li class="relative mb-6 sm:mb-0">
+                        <div class="flex items-center">
+                           <div class="z-10 flex items-center justify-center w-24 h-24 bg-blue-100 rounded-full ring-0 ring-white dark:bg-white-900 sm:ring-8 dark:ring-gray-900 shrink-0">
+                              <img src="assets/img/logo/1000003010-removebg-preview.png" alt="assets/img/logo/1000003010-removebg-preview.png">
+                           </div>
+                           <div class="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700"></div>
+                        </div>
+                        <div class="mt-3 sm:pe-8">
+                           <h3 class="text-lg font-semibold text-gray-900 dark:text-white">NUEVA ECIJA UNIVERSITY OF SCIENCE AND TECHNOLOGY </h3>
+                           <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">2023-PRESENT</time>
+                           <p class="text-base font-normal text-gray-500 dark:text-gray-400">BS INFORMATION TECHNOLOGY</p>
+                        </div>
+                     </li>
+                  </ol>
+             
+                  <br>
+                  <h1 class="mb-4 text-3xl font-extrabold text-gray-900 dark:text-white md:text-5xl lg:text-6xl"><span class="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">Ski</span>lls</h1>
+                  
+                  
+                  <div class="grid grid-cols-2 gap-2">
+  <div>
+    <img class="h-56 w-full rounded-lg object-cover" src="assets/img/skills/pexels-yente-van-eynde-1263034-2403392.jpg" alt="" />
+
+    <h1 class="mb-4 text-xl font-extrabold leading-none tracking-tight text-gray-900 md:text-xl lg:text-xl dark:text-white">
+      <mark class="px-2 text-white bg-blue-600 rounded dark:bg-blue-500">COOKING</mark>
+    </h1>
+  </div>
+  <div>
+    <img class="h-56 w-full rounded-lg object-cover" src="assets/img/skills/pexels-huy-phan-316220-16222012.jpg" alt="" />
+
+    <h1 class="mb-4 text-xl font-extrabold leading-none tracking-tight text-gray-900 md:text-xl lg:text-xl dark:text-white">
+      <mark class="px-2 text-white bg-blue-600 rounded dark:bg-blue-500">FAST TYPING</mark>
+    </h1>
+  </div>
+</div>
+<div class="inline-flex items-center justify-center w-full">
+  <hr class="w-64 h-px my-8 bg-gray-200 border-0 dark:bg-gray-700">
+  <span class="absolute px-3 font-medium text-gray-900 -translate-x-1/2 bg-white left-1/2 dark:text-white dark:bg-gray-900">Web Development Skill</span>
+</div>
+                  <div class="flex justify-between mb-1">
+                     <span class="text-base font-medium text-blue-700 dark:text-white">HTML</span>
+                     <span class="text-sm font-medium text-blue-700 dark:text-white">55%</span>
+                  </div>
+                  <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
+                     <div class="bg-blue-600 h-2.5 rounded-full" style="width: 55%"></div>
+                  </div>
+                  <div class="flex justify-between mb-1">
+                     <span class="text-base font-medium text-blue-700 dark:text-white">CSS</span>
+                     <span class="text-sm font-medium text-blue-700 dark:text-white">50%</span>
+                  </div>
+                  <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
+                     <div class="bg-blue-600 h-2.5 rounded-full" style="width: 50%"></div>
+                  </div>
+                  <div class="flex justify-between mb-1">
+                     <span class="text-base font-medium text-blue-700 dark:text-white">JAVASCRIPT</span>
+                     <span class="text-sm font-medium text-blue-700 dark:text-white">45%</span>
+                  </div>
+                  <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
+                     <div class="bg-blue-600 h-2.5 rounded-full" style="width: 45%"></div>
+                  </div>
+             
+                  <br>
+                  <h1 class="mb-4 text-3xl font-extrabold text-gray-900 dark:text-white md:text-5xl lg:text-6xl"><span class="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">Personal</span> Project</h1>
+                  <div class="relative mx-auto border-gray-800 dark:border-gray-800 bg-gray-800 border-[8px] rounded-t-xl h-[172px] max-w-[301px] md:h-[294px] md:max-w-[512px]">
+                     <div class="rounded-lg overflow-hidden h-[156px] md:h-[278px] bg-white dark:bg-gray-800">
+                        <img src="assets/img/project/IMG_20241128_193450.jpg" class="dark:hidden h-[156px] md:h-[278px] w-full rounded-lg" alt="">
+                        <img src="assets/img/project/IMG_20241128_193450.jpg" alt="">
+                     </div>
+                  </div>
+                  <div class="relative mx-auto bg-gray-900 dark:bg-gray-700 rounded-b-xl rounded-t-sm h-[17px] max-w-[351px] md:h-[21px] md:max-w-[597px]">
+                     <div class="absolute left-1/2 top-0 -translate-x-1/2 rounded-b-xl w-[56px] h-[5px] md:w-[96px] md:h-[8px] bg-gray-800"></div>
+                  </div>
+             
+               <hr class="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700">
+               
+                  <h1 class="mb-4 text-3xl font-extrabold text-gray-900 dark:text-white md:text-5xl lg:text-6xl"><span class="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">Get in</span> touch</h1>
+                  <div class="container px-6 py-12 mx-auto">
+                  <div>
+                     <p class="font-medium text-blue-500 dark:text-blue-400">Contact Me</p>
+                     <div class="grid grid-cols-1 gap-12 mt-10 lg:grid-cols-2">
+                        <div class="grid grid-cols-1 gap-12 md:grid-cols-2">
+                           <div>
+                              <span class="inline-block p-3 text-blue-500 rounded-full bg-blue-100/80 dark:bg-gray-800">
+                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
+                                 </svg>
+                              </span>
+                              <h2 class="mt-4 text-base font-medium text-gray-800 dark:text-white">Email</h2>
+                              <p class="mt-2 text-sm text-gray-500 dark:text-gray-400">Email me @</p>
+                              <p class="mt-2 text-sm text-blue-500 dark:text-blue-400">josepmabagos7@gmail.com</p>
+                           </div>
+                           <div>
+                              <span class="inline-block p-3 text-blue-500 rounded-full bg-blue-100/80 dark:bg-gray-800">
+                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
+                                 </svg>
+                              </span>
+                              <h2 class="mt-4 text-base font-medium text-gray-800 dark:text-white">Phone</h2>
+                              <p class="mt-2 text-sm text-gray-500 dark:text-gray-400">Mon-Fri from 8am to 5pm.</p>
+                              <p class="mt-2 text-sm text-blue-500 dark:text-blue-400">0919-999-6788</p>
+                           </div>
+                        </div>
+                        <div class="p-4 py-6 rounded-lg bg-gray-50 dark:bg-gray-800 md:p-8">
+                           <form>
+                              <div class="-mx-2 md:items-center md:flex">
+                                 <div class="flex-1 px-2">
+                                    <label class="block mb-2 text-sm text-gray-600 dark:text-gray-200">First Name</label>
+                                    <input required type="text" placeholder="John " class="block w-full px-5 py-2.5 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-lg dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40" />
+                                 </div>
+                                 <div class="flex-1 px-2 mt-4 md:mt-0">
+                                    <label class="block mb-2 text-sm text-gray-600 dark:text-gray-200">Last Name</label>
+                                    <input required type="text" placeholder="Doe" class="block w-full px-5 py-2.5 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-lg dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40" />
+                                 </div>
+                              </div>
+                              <div class="mt-4">
+                                 <label class="block mb-2 text-sm text-gray-600 dark:text-gray-200">Email address</label>
+                                 <input type="email" placeholder="johndoe@example.com" class="block w-full px-5 py-2.5 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-lg dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40" />
+                              </div>
+                              <div class="w-full mt-4">
+                                 <label class="block mb-2 text-sm text-gray-600 dark:text-gray-200">Message</label>
+                                 <textarea class="resize-none block w-full h-32 px-5 py-2.5 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-lg md:h-56 dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40 resize-none" placeholder="Message"></textarea>
+                              </div>
+                              <button class="w-full px-6 py-3 mt-4 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-blue-500 rounded-lg hover:bg-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-50">
+                              Send message
+                              </button>
+                           </form>
+                        </div>
+                     </div>
+                  </div>
+
+              </section>
+
+
+              
+               <hr class="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700">
+               <section id="projects">
+                              <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6 ">
+<h1 class="mb-4 text-3xl font-extrabold text-gray-900 dark:text-white md:text-5xl lg:text-6xl"><span class="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">RECENT</span> PROJECTS</h1>
+<p class="text-left rtl:text-right text-gray-500 dark:text-gray-400">ALL OF THIS PROJECT WAS FROM OUR LAST ITWS SUBJECT LAST SEMESTER IT ALSO HAS PERSONAL MADE PROJECT JUST FOR ENHANCEMENT OF OUR SKILL. THIS IS PURELY MADE WITH HTML AND CSS ONLY.</p>
+<br>
+                  <div  class="relative w-full" data-carousel="static">
+                     <!-- Carousel wrapper -->
+                     <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+                        <!-- Item 1 -->
+                        <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
+                           <img src="assets/img/project/IMG_20241128_193704.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                        </div>
+                        <!-- Item 2 -->
+                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                           <img src="assets/img/project/IMG_20241128_193450.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                        </div>
+                        <!-- Item 3 -->
+                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                           <img src="assets/img/project/IMG_20241128_193655.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                        </div>
+                        <!-- Item 4 -->
+                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                           <img src="assets/img/project/IMG_20241128_193704.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                        </div>
+                        <!-- Item 5 -->
+                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                           <img src="assets/img/project/IMG_20241128_193438.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                        </div>
+                     </div>
+                     <!-- Slider indicators -->
+                     <div class="absolute z-30 flex -translate-x-1/2 space-x-3 rtl:space-x-reverse bottom-5 left-1/2">
+                        <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+                        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+                        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+                        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
+                        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
+                     </div>
+                     <!-- Slider controls -->
+                     <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+                        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                           <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+                           </svg>
+                           <span class="sr-only">Previous</span>
+                        </span>
+                     </button>
+                     <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+                        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                           <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+                           </svg>
+                           <span class="sr-only">Next</span>
+                        </span>
+                     </button>
+                  </div>
+                              </div>
+               <hr class="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700">
+          
+           
+               <div  class="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-16 lg:px-6">
+                  <figure class="max-w-screen-md mx-auto">
+                     <svg class="h-12 mx-auto mb-3 text-gray-400 dark:text-gray-600" viewBox="0 0 24 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M14.017 18L14.017 10.609C14.017 4.905 17.748 1.039 23 0L23.995 2.151C21.563 3.068 20 5.789 20 8H24V18H14.017ZM0 18V10.609C0 4.905 3.748 1.038 9 0L9.996 2.151C7.563 3.068 6 5.789 6 8H9.983L9.983 18L0 18Z" fill="currentColor" />
+                     </svg>
+                     <blockquote>
+                        <p class="text-2xl font-medium text-gray-900 dark:text-white">"As we close this chapter, let us remember that every ending is an invitation to a new story. It’s a chance to take all that we’ve learned and write something even more extraordinary in the days to come."</p>
+                     </blockquote>
+                     <figcaption class="flex items-center justify-center mt-6 space-x-3">
+                        <div class="flex items-center divide-x-2 divide-gray-500 dark:divide-gray-700">
+                           <div class="pr-3 font-medium text-gray-900 dark:text-white">Mackie & Joseph</div>
+                           <div class="pl-3 text-sm font-light text-gray-500 dark:text-gray-400">Developer</div>
+                        </div>
+                     </figcaption>
+                  </figure>
+               
+       
+          
+               <div class="container px-6 py-10 mx-auto">
+                  <div class="text-center">
+                     <h1 class="text-2xl font-semibold text-gray-800 capitalize lg:text-3xl dark:text-white">From the Developers</h1>
+                     <p class="max-w-lg mx-auto mt-4 text-gray-500">
+                     </p>
+                  </div>
+                  <div class="grid grid-cols-1 gap-8 mt-8 lg:grid-cols-2">
+                     <div>
+                        <img class="relative z-10 object-cover w-full rounded-md h-96" src="https://images.unsplash.com/photo-1644018335954-ab54c83e007f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="">
+                        <div class="relative z-20 max-w-lg p-6 mx-auto -mt-20 bg-white rounded-md shadow dark:bg-gray-900">
+                           <a href="#" class="font-semibold text-gray-800 hover:underline dark:text-white md:text-xl">
+                           Great Experience
+                           </a>
+                           <p class="mt-3 text-sm text-gray-500 dark:text-gray-300 md:text-sm">
+                              While creating this project i learn a lot of experience that i can use for my future projects 
+                           </p>
+                           <p class="mt-3 text-sm text-blue-500">Joseph M. Pineda</p>
+                        </div>
+                     </div>
+                     <div>
+                        <img class="relative z-10 object-cover w-full rounded-md h-96" src="https://images.unsplash.com/photo-1497032628192-86f99bcd76bc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="">
+                        <div class="relative z-20 max-w-lg p-6 mx-auto -mt-20 bg-white rounded-md shadow dark:bg-gray-900">
+                           <a href="#" class="font-semibold text-gray-800 hover:underline dark:text-white md:text-xl">
+                           One of the Best
+                           </a>
+                           <p class="mt-3 text-sm text-gray-500 dark:text-gray-300 md:text-sm">
+                              This Project is easily one of the best project we have created together as a team
+                           </p>
+                           <p class="mt-3 text-sm text-blue-500">Mackie V. Vero</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+                  
+
+
+
+               </section>
+                  
+            </section>
+            
+      </main>
+      <footer>
+         <section id="contacts" class="bg-white dark:bg-gray-900">
+            <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
+               <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">Contact Us</h2>
+               <p class="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">Got a technical issue? Want to send feedback about the feature?</p>
+               <form action="#" class="space-y-8">
+                  <div>
+                     <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Your email</label>
+                     <input type="email" id="email" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="name@gmail.com" required>
+                  </div>
+                  <div>
+                     <label for="subject" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Subject</label>
+                     <input type="text" class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="Let us know how we can help you" required>
+                  </div>
+                  <div class="sm:col-span-2">
+                     <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">Your message</label>
+                     <textarea  rows="6" class=" resize-none block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Leave a comment..."></textarea>
+                  </div>
+<button type="button" class="w-full text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">SEND MESSAGE</button>
+               </form>
+            </div>
+                           <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6 ">
+            <div id="accordion-collapse" data-accordion="collapse">
+               <h2 id="accordion-collapse-heading-1">
+                  <button type="button" class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-b-0 border-gray-200 rounded-t-xl focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 gap-3" data-accordion-target="#accordion-collapse-body-1" aria-expanded="true" aria-controls="accordion-collapse-body-1">
+                     <span>Why Framework?</span>
+                     <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
+                     </svg>
+                  </button>
+               </h2>
+               <div id="accordion-collapse-body-1" class="hidden" aria-labelledby="accordion-collapse-heading-1">
+                  <div class="p-5 border border-b-0 border-gray-200 dark:border-gray-700 dark:bg-gray-900">
+                     <p class="mb-2 text-gray-500 dark:text-gray-400">Using a framework in software development offers many advantages. It provides a structured foundation, tools, and best practices to help developers create applications efficiently and maintain them effectively</p>
+                     <p class="text-gray-500 dark:text-gray-400">Check out this guide to learn how to <a href="/docs/getting-started/introduction/" class="text-blue-600 dark:text-blue-500 hover:underline">get started</a> and start developing websites even faster with components on top of Tailwind CSS.</p>
+                  </div>
+               </div>
+               <h2 id="accordion-collapse-heading-2">
+                  <button type="button" class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-b-0 border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 gap-3" data-accordion-target="#accordion-collapse-body-2" aria-expanded="false" aria-controls="accordion-collapse-body-2">
+                     <span>What the reason behind the design</span>
+                     <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
+                     </svg>
+                  </button>
+               </h2>
+               <div id="accordion-collapse-body-2" class="hidden" aria-labelledby="accordion-collapse-heading-2">
+                  <div class="p-5 border border-b-0 border-gray-200 dark:border-gray-700">
+                     <p class="mb-2 text-gray-500 dark:text-gray-400">User-Centered Approach
+                        A design that prioritizes usability and accessibility ensures your audience can navigate and interact with the content easily.
+                        It’s important to align the design with the needs, preferences, and expectations of your target audience.
+                     </p>
+                  </div>
+               </div>
+               <h2 id="accordion-collapse-heading-3">
+                  <button type="button" class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 gap-3" data-accordion-target="#accordion-collapse-body-3" aria-expanded="false" aria-controls="accordion-collapse-body-3">
+                     <span>How we implemented Flowbite component Tailwind UI?</span>
+                     <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
+                     </svg>
+                  </button>
+               </h2>
+               <div id="accordion-collapse-body-3" class="hidden" aria-labelledby="accordion-collapse-heading-3">
+                  <div class="p-5 border border-t-0 border-gray-200 dark:border-gray-700">
+                     <p class="mb-2 text-gray-500 dark:text-gray-400">The main difference is that the core components from Flowbite are open source under the MIT license, whereas Tailwind UI is a paid product. Another difference is that Flowbite relies on smaller and standalone components, whereas Tailwind UI offers sections of pages.</p>
+                     <p class="mb-2 text-gray-500 dark:text-gray-400">However, we actually recommend using both Flowbite, Flowbite Pro, and even Tailwind UI as there is no technical reason stopping you from using the best of two worlds.</p>
+                     <p class="mb-2 text-gray-500 dark:text-gray-400">Learn more about these technologies:</p>
+                     <ul class="ps-5 text-gray-500 list-disc dark:text-gray-400">
+                        <li><a href="https://flowbite.com/pro/" class="text-blue-600 dark:text-blue-500 hover:underline">Flowbite Pro</a></li>
+                        <li><a href="https://tailwindui.com/" rel="nofollow" class="text-blue-600 dark:text-blue-500 hover:underline">Tailwind UI</a></li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <footer class="bg-white dark:bg-gray-900">
+            <div class="container px-6 py-8 mx-auto">
+               <div class="flex flex-col items-center text-center">
+                  <a href="#">
+                  <img class="w-auto h-7" src="" alt="">
+                  </a>
+                  <div class="flex flex-wrap justify-center mt-6 -mx-4">
+                     <a href="#" class="mx-4 text-sm text-gray-600 transition-colors duration-300 hover:text-blue-500 dark:text-gray-300 dark:hover:text-blue-400" aria-label="Reddit"> Home </a>
+                     <a href="#about" class="mx-4 text-sm text-gray-600 transition-colors duration-300 hover:text-blue-500 dark:text-gray-300 dark:hover:text-blue-400" aria-label="Reddit"> About </a>
+                     <a href="#projects" class="mx-4 text-sm text-gray-600 transition-colors duration-300 hover:text-blue-500 dark:text-gray-300 dark:hover:text-blue-400" aria-label="Reddit"> Projects </a>
+                     <a href="#contacts" class="mx-4 text-sm text-gray-600 transition-colors duration-300 hover:text-blue-500 dark:text-gray-300 dark:hover:text-blue-400" aria-label="Reddit"> Contacts </a>
+                  </div>
+               </div>
+               <hr class="my-6 border-gray-200 md:my-10 dark:border-gray-700" />
+               <div class="flex flex-col items-center sm:flex-row sm:justify-between">
+                  <p class="text-sm text-gray-500 dark:text-gray-300">© Copyright 2024. All Rights Reserved.</p>
+                  <div class="flex -mx-2">
+                     <a href="https://github.com/" class="mx-2 text-gray-600 transition-colors duration-300 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400" aria-label="Github">
+                        <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24" fill="none"
+                           xmlns="http://www.w3.org/2000/svg">
+                           <path
+                              d="M12.026 2C7.13295 1.99937 2.96183 5.54799 2.17842 10.3779C1.395 15.2079 4.23061 19.893 8.87302 21.439C9.37302 21.529 9.55202 21.222 9.55202 20.958C9.55202 20.721 9.54402 20.093 9.54102 19.258C6.76602 19.858 6.18002 17.92 6.18002 17.92C5.99733 17.317 5.60459 16.7993 5.07302 16.461C4.17302 15.842 5.14202 15.856 5.14202 15.856C5.78269 15.9438 6.34657 16.3235 6.66902 16.884C6.94195 17.3803 7.40177 17.747 7.94632 17.9026C8.49087 18.0583 9.07503 17.99 9.56902 17.713C9.61544 17.207 9.84055 16.7341 10.204 16.379C7.99002 16.128 5.66202 15.272 5.66202 11.449C5.64973 10.4602 6.01691 9.5043 6.68802 8.778C6.38437 7.91731 6.42013 6.97325 6.78802 6.138C6.78802 6.138 7.62502 5.869 9.53002 7.159C11.1639 6.71101 12.8882 6.71101 14.522 7.159C16.428 5.868 17.264 6.138 17.264 6.138C17.6336 6.97286 17.6694 7.91757 17.364 8.778C18.0376 9.50423 18.4045 10.4626 18.388 11.453C18.388 15.286 16.058 16.128 13.836 16.375C14.3153 16.8651 14.5612 17.5373 14.511 18.221C14.511 19.555 14.499 20.631 14.499 20.958C14.499 21.225 14.677 21.535 15.186 21.437C19.8265 19.8884 22.6591 15.203 21.874 10.3743C21.089 5.54565 16.9181 1.99888 12.026 2Z">
+                           </path>
+                        </svg>
+                     </a>
+                  </div>
+               </div>
+            </div>
+         </footer>
+      </footer>
+      <script>
+         var themeToggleDarkIcon = document.getElementById('theme-toggle-dark-icon');
+         var themeToggleLightIcon = document.getElementById('theme-toggle-light-icon');
+         
+         // Change the icons inside the button based on previous settings
+         if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+           themeToggleLightIcon.classList.remove('hidden');
+         } else {
+           themeToggleDarkIcon.classList.remove('hidden');
+         }
+         
+         var themeToggleBtn = document.getElementById('theme-toggle');
+         
+         themeToggleBtn.addEventListener('click', function() {
+         
+           // toggle icons inside button
+           themeToggleDarkIcon.classList.toggle('hidden');
+           themeToggleLightIcon.classList.toggle('hidden');
+         
+           // if set via local storage previously
+           if (localStorage.getItem('color-theme')) {
+             if (localStorage.getItem('color-theme') === 'light') {
+               document.documentElement.classList.add('dark');
+               localStorage.setItem('color-theme', 'dark');
+             } else {
+               document.documentElement.classList.remove('dark');
+               localStorage.setItem('color-theme', 'light');
+             }
+         
+             // if NOT set via local storage previously
+           } else {
+             if (document.documentElement.classList.contains('dark')) {
+               document.documentElement.classList.remove('dark');
+               localStorage.setItem('color-theme', 'light');
+             } else {
+               document.documentElement.classList.add('dark');
+               localStorage.setItem('color-theme', 'dark');
+             }
+           }
+         
+         });
+      </script>
+      <script src="tailwind.config.js">tailwind.config.js</script>
+      <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+      <!--=============== MAIN JS ===============-->
+      <script src="assets/js/main.js"></script>
+   </body>
+</html>
